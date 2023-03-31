@@ -1,16 +1,6 @@
 
 import java.util.Scanner;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author TiniGonaXheni
- */
 public class Store {
     private Warehouse warehouse;
     private Scanner scanner;
@@ -40,9 +30,7 @@ public class Store {
             if (warehouse.take(product)){
                 cart.add(product, warehouse.price(product));
             }
-            // Add code here that adds the product to the cart,
-            // If there is any in the warehouse, and reduces the stock in the warehouse
-            // Don't touch any of the other code!
+            
         }
 
         System.out.println("your shoppingcart contents:");
